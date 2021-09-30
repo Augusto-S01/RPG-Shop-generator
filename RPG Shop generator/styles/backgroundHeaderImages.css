@@ -1,0 +1,26 @@
+.headerBackgroundImage1{
+    background-image: url("/backgroundHeaderImages/backgroundHeader1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.headerBackgroundImage2{
+    background-image: url("/backgroundHeaderImages/backgroundHeader2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.headerBackgroundImage3{
+    background-image: url("/backgroundHeaderImages/backgroundHeader3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.headerBackgroundImage4{
+    background-image: url("/backgroundHeaderImages/backgroundHeader4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.headerBackgroundImage5{
+    background-image: url("/backgroundHeaderImages/backgroundHeader5.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}

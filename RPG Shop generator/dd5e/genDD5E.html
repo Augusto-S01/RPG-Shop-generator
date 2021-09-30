@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/dd5e.css">
+    <link rel="stylesheet" href="/styles/blur.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header class="dd5e__header header">
+        <div class="header__dd5e__left">
+            <div class="header__dd5e__currentSystem">
+                <a>
+                    <span class="header__currentSystem">Sistema atual: Dungeons & Dragons 5ª Edição</span>
+                </a>
+            </div>
+        </div>
+
+
+
+        <div class="header__dd5e__right">
+            <div class="header__dd5e__reGenContainer hide" id="reGenContainer">
+                <a href="genDD5E.html">
+                    <span>☇ Gerar novamente</span>
+                </a>
+            </div>
+            <div class="header__dd5e__returnContainer"> 
+                <a href="/home.html">
+                    <span>◄ selecionar outro sistema</span>
+                </a>
+            </div>
+
+        </div>
+
+
+    </header>
+    
+    <form class="form" id="config">
+        <div class="form__titleContainer">
+            <h1 class="form__title">Geração de lojas</h1>
+            <div id="divErrorSpan">
+                <span class="form__errorSpan" id="errorSpan"></span>
+            </div>
+        </div>
+        <div class="form__containerTypes">
+            <!-- Form Armas -->
+            <div class="form__containerWeapon"> 
+                <h2 class="">Armas</h2>
+                <input type="checkbox" name="checkboxEnableGenWeapon" id="inputCheckboxEnableGenWeapon">
+                <label for="inputCheckboxEnableGenWeapon">Habilitar geração de armas</label>
+                <div id="divContainerAllOptionsWeapon" class="hide">
+                    <div id="divGenAllWeapon" class="">
+                        <input type="checkbox" name="checkboxDisableOutOfStockWeapon" id="inputCheckboxDisableOutOfStockWeapon" checked>
+                        <label for="inputCheckboxDisableOutOfStockWeapon">Gerar todos as armas</label>
+                    </div>
+                        <div id="containerAllOutOfStockWeapon" class="hide">
+                            <div id="divOutOfStockWeapon" class="hide">
+                                <input type="radio" name="radioOutOfStockTypeWeapon" id="inputRadioOutOfStockTypeGenFaltandoWeapon" value="faltandoWeapon" checked>
+                                <label for="inputRadioOutOfStockTypeGenFaltandoWeapon">Gerar Faltando Itens</label>
+                
+                                <input type="radio" name="radioOutOfStockTypeWeapon" id="inputRadioOutOfStockTypeGenNumeroWeapon" value="numeroFixGenWeapon">
+                                <label for="inputRadioOutOfStockTypeGenNumeroWeapon">Gerar somente X itens </label>
+                            </div>
+                            <div id="divItensGenWeapon" class="hide">
+                                <input type="number" name="numberItensGenWeapon" id="inputNumberItensGenWeapon" min="0" max="36">
+                                <label for="inputNumberItensGenWeapon">Numero de armas a ser gerados (max:36)</label>
+                            </div>
+                            <div id="divItensFaltandoGenWeapon" class="">
+                                <input type="number" name="numberItensGenWeaponFaltando" id="inputNumberItensGenWeaponFaltando" min="0" max="36">
+                                <label for="inputNumberItensGenWeaponFaltando">Numero de armas faltando (max:36)</label>
+                            </div>
+                        </div>
+                    <div id="divVarEcoEnableWeapon" class="">
+                        <input type="checkbox" name="checkboxEnableVarEcoWeapon" id="inputCheckboxEnableVarEcoWeapon">
+                        <label for="inputCheckboxEnableVarEcoWeapon">Habilitar Variação Economica</label>
+                    </div>
+                    <div id="containerAllVarEcoOptionWeapon" class="hide form__test">
+                        <input type="number" name="inputNumberItensAfetadadosVarEcoWeapon" id="inputNumberItensAfetadadosVarEcoWeapon" min="0" max="37" value="1">
+                        <label for="inputNumberItensAfetadadosVarEcoWeapon">itens avetados pela variação economica</label>
+                        <input type="number" name="inputNumberPorcentagemVarEcomMinWeapon" id="inputNumberPorcentagemVarEcomMinWeapon" min="0" max="99" value="90">
+                        <label for="inputNumberPorcentagemVarEcomMinWeapon">Numero minimo da porcentagem</label>
+                        <input type="number" name="inputNumberPorcentagemVarEcomMaXWeapon" id="inputNumberPorcentagemVarEcomMaxWeapon" min="0" max="99" value="99">
+                        <label for="inputNumberPorcentagemVarEcomMaxWeapon">Numero maximo da porcentagem</label>
+                       
+
+                    </div>
+                </div>
+    
+            </div>
+    
+            <hr>
+            <!-- Form Armaduras -->
+            <div class="form__containerArmor">
+                <h2>Armaduras</h2>
+                <input type="checkbox" name="checkboxEnableGenArmor" id="inputCheckboxEnableGenArmor">
+                <label for="inputCheckboxEnableGenArmor">Habilitar Geração de armaduras</label>
+    
+                <div id="divContainerAllOptionsArmor" class="hide">
+                    <div id="divGenAllArmor" class="" >
+                        <input type="checkbox" name="checkboxDisableOutOfStock" id="inputCheckboxDisableOutOfStockArmor" checked>
+                        <label for="inputCheckboxDisableOutOfStock">Gerar todas as armaduras</label>
+                    </div>
+                <div id="containerAllOutOfStockArmor" class="hide">
+                    <div id="divOutOfStockArmor" class="">
+                        <input type="radio" name="radioOutOfStockTypeArmor" id="inputRadioOutOfStockTypeGenFaltandoArmor" value="faltandoArmor" checked>
+                        <label for="inputRadioOutOfStockTypeGenFaltandoArmor">Gerar Faltando Itens</label>
+            
+                        <input type="radio" name="radioOutOfStockTypeArmor" id="inputRadioOutOfStockTypeGenNumeroArmor" value="numeroFixGenArmor"> 
+                        <label for="inputRadioOutOfStockTypeGenNumeroArmor">Gerar somente X itens </label>
+                    </div>
+                    <div id="divItensGenArmor" class="hide">
+                        <input type="number" name="numberItensGenArmor" id="inputNumberItensGenArmor" min="0" max="12">
+                        <label for="inputNumberItensGenWeapon">Numero de armaduras a ser gerados (max:12)</label>
+                    </div>
+                    <div id="divItensFaltandoGenArmor" class="">
+                        <input type="number" name="numberItensGenArmorFaltando" id="inputNumberItensGenArmorFaltando" min="0" max="12">
+                        <label for="inputNumberItensGenArmorFaltando">Numero de armaduras faltando (max:12)</label>
+                    </div>
+                </div>
+                    <div id="divVarEcoEnableArmor" class="">
+                        <input type="checkbox" name="checkboxEnableVarEcoArmor" id="inputCheckboxEnableVarEcoArmor">
+                        <label for="inputCheckboxEnableVarEcoArmor">Habilitar Variação Economica</label>
+                    </div>
+                    <div id="containerAllVarEcoOptionArmor" class="hide form__test">
+                        <input type="number" name="inputNumberItensAfetadadosVarEcoArmor" id="inputNumberItensAfetadadosVarEcoArmor" min="0" max="13" value="1"> 
+                        <label for="inputNumberItensAfetadadosVarEcoArmor">itens avetados pela variação economica</label>
+                        <input type="number" name="inputNumberPorcentagemVarEcomMinArmor" id="inputNumberPorcentagemVarEcomMinArmor" min="0" max="99" value="90">
+                        <label for="inputNumberPorcentagemVarEcomMinArmor">Numero minimo da porcentagem</label>
+                        <input type="number" name="inputNumberPorcentagemVarEcomMaXArmor" id="inputNumberPorcentagemVarEcomMaxArmor" min="0" max="99" value="99">
+                        <label for="inputNumberPorcentagemVarEcomMaxArmor">Numero Maximo da porcentagem</label>
+                       
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        <div class="form__btn">
+            <input type="submit" value="gerar" id="inputButtonGerar">
+        </div>
+
+
+    </form>
+
+    <main class="hide" id="shop">
+        <ul class="shop__ulNav">
+            <li class="shop__liNavActive" id="tabAll">Todos</li>
+            <li class="shop__liNavDisable" id="tabWeapon">Armas</li>
+            <li class="shop__liNavDisable" id="tabArmor">Armaduras</li>
+        </ul>
+        <section class="shop__section" id="shopSection">
+
+
+            <div class="shop__Armor" id="shop__Armor">
+                
+
+                <div>
+                    <span class="shop__spanGuideLine">Armadura leve</span>
+                    <hr class="shop__hr"></hr>
+                    <ul class="shop__lightArmorSection" id="shop__lightArmorSection">
+                        
+                    </ul>
+                </div>
+
+                <div>
+                    <span class="shop__spanGuideLine">Armadura Média</span>
+                    <hr class="shop__hr"></hr>
+                    <ul class="shop__mediumArmorSection" id="shop__mediumArmorSection">
+                        
+                    </ul>
+                </div>
+
+                <div>
+                    <span class="shop__spanGuideLine">Armadura Pesada</span>
+                    <hr class="shop__hr"></hr>
+                    <ul class="shop__heavyArmorSection" id="shop__heavyArmorSection">
+                        
+                    </ul>
+                </div>
+                
+                <div>
+                    <span class="shop__spanGuideLine">Escudo</span>
+                    <hr class="shop__hr"></hr>
+                    <ul class="shop__shieldSection" id="shop__shieldSection">
+                        
+                    </ul>
+                </div>
+
+
+            </div>
+            
+            <div class="shop__Armor" id="shop__Weapon">
+                <div>
+                    <span class="shop__spanGuideLine">Armas Simples Corpo-a-Corpo</span>
+                    <hr class="shop__hr"></hr>
+                    <ul class="shop__simpleMeleeSection" id="shop__simpleMeleeSection">
+                        
+                    </ul>
+                </div>
+                <div>
+                    <span class="shop__spanGuideLine">Armas Simples à Distância</span>
+                    <hr class="shop__hr"></hr>
+                    <ul class="shop__simpleRangedSection" id="shop__simpleRangedSection">
+                        
+                    </ul>
+                </div>
+                <div>
+                    <span class="shop__spanGuideLine">Armas Marciais Corpo-a-Corpo</span>
+                    <hr class="shop__hr"></hr>
+                    <ul class="shop__martialMeleeSection" id="shop__martialMeleeSection">
+                        
+                    </ul>
+                </div>
+                <div>
+                    <span class="shop__spanGuideLine">Armas Marcial à Distância</span>
+                    <hr class="shop__hr"></hr>
+                    <ul class="shop__martialRangedSection" id="shop__martialRangedSection">
+                        
+                    </ul>
+                </div>
+                
+            </div>
+
+            <div class="shop__Weapon" id="shop__Weapon"></div>
+            <div class="shop__itens"></div>
+        </section>
+
+
+
+    </main>
+
+    <script type="module" src="controleForm.js"></script>
+    <script type="module" src="gerarItens.js"></script>
+    <script type="module" src="blur.js"></script>
+    <script type="module" src="genArmor.js"></script>
+    <script type="module" src="controleTabs.js"></script>
+    <script type="module" src="genWeapon.js"></script>
+</body>

@@ -1,0 +1,8 @@
+Olá, 
+caso você esteja tentando executar o html e ele esta em branco o header inicial não se preocupe.
+isso é um erro de "Cors" ( cross-origin resource sharing) e o seu navegador não esta permitindo que o javascript
+seja executado. 
+para isso o site deve ser hospedado, mas calma , você não precisa pagar a hospedagem para ver esse projeto
+basta abrir a pasta desse projeto no VScode e usar a extensão live-server. com isso ele ira emular uma hospedagem na sua
+maquina e você poderar ver o site em seu funcionamento padrão.
+para mais duvidas leia a documentação.

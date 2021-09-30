@@ -1,0 +1,5 @@
+.blur{
+    transition: 3s;
+    backdrop-filter: blur(5px);
+}
+

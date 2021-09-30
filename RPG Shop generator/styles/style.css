@@ -1,0 +1,137 @@
+.header {
+  height: 900px;
+  width: 100%;
+  display: flex;
+  color: #ffffff;
+}
+.header__containerTitle {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 30%;
+  top: 10%;
+}
+.header__logo {
+  width: 100px;
+}
+.header__spanTitle {
+  color: #ffffff;
+  font-size: 50px;
+  font-family: "MedievalSharp", cursive;
+  align-items: center;
+  margin-right: 1px;
+}
+.header__aboutContainer {
+  position: absolute;
+  margin-top: 20px;
+  margin-right: 20px;
+  right: 3%;
+  font-family: "MedievalSharp", cursive;
+}
+.header__aboutContainer > a {
+  display: flex;
+  text-decoration: none;
+  color: #ffffff;
+}
+.header__questionMark {
+  line-height: 25px;
+  display: block;
+  width: 25px;
+  height: 25px;
+  font-size: 16px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  text-align: center;
+  font-family: "MedievalSharp", cursive;
+}
+.header__about {
+  margin-left: 5px;
+  font-size: 30px;
+  text-align: center;
+  font-family: "MedievalSharp", cursive;
+}
+
+.selectorGen {
+  padding-bottom: 2em;
+  background: #000000;
+  color: #ffffff;
+  text-align: center;
+}
+.selectorGen__title {
+  margin-top: 5em;
+  position: relative;
+  top: 0%;
+  color: #ffffff;
+  font-size: 50px;
+  font-family: "MedievalSharp", cursive;
+  align-items: center;
+}
+.selectorGen__container {
+  display: flex;
+  margin: 2em 25px;
+  justify-content: center;
+  align-items: center;
+}
+.selectorGen__logo {
+  width: 200px;
+  height: 75px;
+}
+.selectorGen__titleOpcao {
+  font-family: "MedievalSharp", cursive;
+  font-size: 10px;
+  color: #ffffff;
+}
+.selectorGen__containerOpcao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.selectorGen__containerOpcao > a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.wipGen {
+  padding-bottom: 38em;
+  background: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 5em;
+}
+.wipGen__title {
+  margin-top: 5em;
+  position: relative;
+  top: 0%;
+  color: #ffffff;
+  font-size: 50px;
+  font-family: "MedievalSharp", cursive;
+  align-items: center;
+}
+.wipGen__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 2em 25px;
+  row-gap: 100px;
+}
+.wipGen__containerOpcao > a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.wipGen__titleOpcao {
+  font-family: "MedievalSharp", cursive;
+  font-size: 10px;
+  color: #ffffff;
+}
+.wipGen__logo {
+  width: 200px;
+  height: 75px;
+}
+
+/*# sourceMappingURL=style.css.map */

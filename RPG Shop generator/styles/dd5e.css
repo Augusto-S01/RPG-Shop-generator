@@ -1,0 +1,224 @@
+body {
+  background-image: url("/imagem/dd5ebackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  font-family: "MedievalSharp", cursive;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.header__currentSystem {
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 15px;
+}
+.header__dd5e__header {
+  display: flex;
+}
+.header__dd5e__right {
+  display: flex;
+}
+.header__dd5e__aboutContainer {
+  display: flex;
+  margin-top: 20px;
+  margin-right: 20px;
+  font-family: "MedievalSharp", cursive;
+}
+.header__dd5e__aboutContainer > a {
+  display: flex;
+  text-decoration: none;
+  color: #ffffff;
+}
+.header__dd5e__questionMark {
+  line-height: 25px;
+  display: block;
+  width: 25px;
+  height: 25px;
+  font-size: 16px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  text-align: center;
+  font-family: "MedievalSharp", cursive;
+}
+.header__dd5e__about {
+  margin-left: 5px;
+  font-size: 30px;
+  text-align: center;
+  font-family: "MedievalSharp", cursive;
+}
+.header__dd5e__returnContainer {
+  margin-top: 20px;
+  margin-right: 100px;
+  font-size: 30px;
+}
+.header__dd5e__returnContainer > a {
+  display: flex;
+  text-decoration: none;
+  color: #ffffff;
+}
+.header__dd5e__reGenContainer {
+  margin-top: 20px;
+  margin-right: 100px;
+  font-size: 30px;
+}
+.header__dd5e__reGenContainer > a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.form {
+  margin-top: 10em;
+  margin-right: 50px;
+  margin-left: 50px;
+  border: 1px solid black;
+  height: 400px;
+  background: url(/imagem/background_main.png);
+  background-size: cover;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+.form__test {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+}
+.form__div {
+  display: flex;
+}
+.form__titleContainer {
+  margin-bottom: 2em;
+}
+.form__title {
+  text-align: center;
+  width: 100%;
+}
+.form__errorSpan {
+  margin: 8px;
+  color: #dd0202;
+}
+.form__containerTypes {
+  display: flex;
+  flex-direction: row;
+}
+.form__containerWeapon {
+  width: 50%;
+}
+.form__containerArmor {
+  width: 50%;
+}
+.form__btn {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 2em;
+}
+
+.hide {
+  display: none;
+}
+
+.shake {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+.fadeout {
+  animation: fadeout ease-in-out forwards 4s;
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.shop__ulNav {
+  margin-top: 10em;
+  margin-left: 50px;
+  display: flex;
+}
+.shop__liNavActive {
+  background: url(/imagem/background_main.png);
+  padding: 7px;
+  border-top: 1px solid;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  color: #000000;
+}
+.shop__liNavDisable {
+  padding: 7px;
+  border-top: 1px solid;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  color: #c2b9b9;
+}
+.shop__section {
+  margin-right: 50px;
+  margin-left: 50px;
+  border: 1px solid black;
+  min-height: 400px;
+  margin-bottom: 2em;
+  background: url(/imagem/background_main.png);
+  background-size: cover;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+.shop__spanGuideLine {
+  font-style: italic;
+  font-size: 12px;
+  font-weight: bold;
+}
+.shop__hr {
+  margin: 0;
+}
+
+.itemArmor {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  grid-template-columns: 50px 100px 50px 100px 50px 100px 50px 75px 50px 100px 50px 100px 50px 100px;
+  gap: 10px;
+}
+
+.itemWeapon {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  display: grid;
+  grid-template-columns: 50px 100px 50px 100px 50px 100px 50px 100px 125px 125px 125px 125px;
+  gap: 10px;
+}
+
+.item__iconIMG {
+  height: 2em;
+}
+.item__priceUp {
+  color: #1b7c0f;
+}
+.item__priceDown {
+  color: #dd0202;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+/*# sourceMappingURL=dd5e.css.map */

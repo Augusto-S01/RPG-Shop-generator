@@ -1,0 +1,301 @@
+body{
+    background-image: url("/imagem/dd5ebackground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+ 
+
+      
+    
+
+    color:#ffffff;
+    font-family: "MedievalSharp", cursive;
+
+}
+
+
+.header{
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+   
+
+
+
+
+    &__currentSystem{
+        margin-left: 20px;
+        margin-top: 20px;
+
+
+
+        font-size: 15px;
+    }
+    &__dd5e{
+        &__header{
+            display: flex;
+            
+        }
+
+        &__right{
+            display: flex;
+        }
+
+        &__aboutContainer{
+            display: flex;
+            margin-top: 20px;
+            margin-right: 20px;
+            font-family: 'MedievalSharp', cursive;
+
+            &>a{
+                display:flex;
+                text-decoration: none;
+                color:#ffffff;
+            }
+        }
+
+        &__questionMark{
+            line-height: 25px;
+            display: block;
+            width: 25px;
+            height: 25px;
+            font-size: 16px;
+            border-radius: 50%;
+            border: 1px solid #ffffff;
+            text-align: center;
+            font-family: 'MedievalSharp', cursive;
+        }
+
+        &__about{
+            margin-left: 5px;
+            font-size: 30px;
+            text-align: center;
+            font-family: 'MedievalSharp', cursive;
+        }
+        &__returnContainer{
+            margin-top: 20px;
+            margin-right: 100px;
+            font-size: 30px;
+            &>a{
+                display:flex;
+                text-decoration: none;
+                color:#ffffff;
+            }
+        }
+        &__reGenContainer{
+            margin-top: 20px;
+            margin-right: 100px;
+            font-size: 30px;
+            &>a{
+                text-decoration: none;
+                color:#ffffff;
+            }
+        }
+    }
+}
+
+
+.form{
+    margin-top: 10em;
+    margin-right: 50px;
+    margin-left: 50px;
+    border:1px solid black;
+    height: 400px;
+    
+
+    background: url(/imagem/background_main.png);
+    background-size: cover;
+
+
+    color: black;
+
+    display: flex;
+    flex-direction: column;
+ 
+
+
+    &__test{
+        display: grid;
+        grid-template-columns: 100px 1fr;
+
+    }
+    &__div{
+        display: flex;
+    }
+    &__titleContainer{
+        margin-bottom: 2em;
+    }
+    &__title{
+        text-align: center;
+        width: 100%;
+        
+    }
+    &__errorSpan{
+        margin: 8px;
+        color:#dd0202;
+    }
+    &__containerTypes{
+        display: flex;
+        flex-direction: row;
+    }
+    &__containerWeapon{
+        width: 50%;
+    }
+    &__containerArmor{
+        width: 50%;
+    }
+    &__btn{
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 2em;
+    }
+}
+
+.hide{
+    display:none;
+}
+
+
+.shake{
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+.fadeout{
+    animation: fadeout ease-in-out forwards 4s ;
+}
+
+@keyframes fadeout{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+
+    }
+}
+
+.shop{
+    &__ulNav{
+        margin-top: 10em;
+        margin-left:50px;
+        display: flex;
+
+    }
+    &__liNavActive{
+        background: url(/imagem/background_main.png);
+
+        padding: 7px;
+        border-top: 1px solid;
+        border-left: 1px solid;
+        border-right: 1px solid;
+
+        color: #000000;
+    }
+    &__liNavDisable{
+
+
+        padding: 7px;
+        border-top: 1px solid;
+        border-left: 1px solid;
+        border-right: 1px solid;
+
+        color: #c2b9b9;
+    }
+    &__section{
+
+        margin-right: 50px;
+        margin-left: 50px;
+        border:1px solid black;
+        min-height: 400px;
+        margin-bottom: 2em;
+   
+        
+    
+        background: url(/imagem/background_main.png);
+        background-size: cover;
+    
+    
+        color: black;
+    
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__spanGuideLine{
+        font-style: italic;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    &__hr{
+        margin: 0;
+    }
+    
+}
+
+.itemArmor{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+    
+    
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-columns: 50px 100px 50px 100px 50px 100px 50px 75px 50px 100px 50px 100px 50px 100px ;
+    gap: 10px;
+
+}
+
+.itemWeapon{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+    
+    
+    display: grid;
+    grid-template-columns: 50px 100px 50px 100px 50px 100px 50px 100px 125px 125px 125px 125px;
+     // icone  nome    moeda    preço   icone   dano    icone   peso   prop1 prop2 prop3 prop4
+
+    gap:10px;
+    
+
+}
+
+.item{
+
+    &__iconIMG{
+        height: 2em;
+    }
+
+    &__priceUp{
+        color:#1b7c0f;
+    }
+    &__priceDown{
+        color:#dd0202;
+    }
+}
+
+
+
+
+
+
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
